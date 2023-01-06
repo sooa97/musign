@@ -182,3 +182,122 @@ section.team .circleBox {position: absolute; width: 700px; z-index: -1; left: 20
     0% {stroke-dashoffset: 1564;}
     100% {stroke-dashoffset: 0;}
 }
+
+/*responsive*/
+
+/*pc모드*/
+@media screen and (max-width:1720px){/*1720px~1401px사이*/
+    .innerHeader {max-width: 100%; padding: 0 30px; box-sizing: border-box;}
+    .innerHeader .mainMenu .sns {margin-left: 200px;}
+    section.visual {max-width: 100%; padding: 0 30px; box-sizing: border-box;}
+    section.visual .mainTxt {margin-top: 150px;}
+    section.visual .mainTxt .tit {font-size: 62px;}    
+}
+/*1024 테블릿모드*/
+@media screen and (max-width:1400px){/*1400px~1024px사이*/
+    section.visual .mainTxt {margin-top: 100px;}
+    section.visual .mainTxt .tit {font-size: 46px;}
+    section.visual .mainTxt .txt{padding: 20px 0px 0px 0px;}
+    section .inner{width: 100%; padding: 0 30px; box-sizing: border-box;}
+    .img img {width:100%;}
+    /*section.journal{overflow: hidden;}*/
+    section.journal .scroll{display: none;}
+    section.journal .circleBox{ right: -10%; top:0;}
+    section.journal .inner .box .img{width: 90%;}
+    section.customer {padding: 160px 0;}
+    footer {width: 100%; padding: 0 30px; box-sizing: border-box;}
+}
+
+/*1024 이하 테블렛*/
+@media screen and (max-width:1000px){/*768px 까지*/
+    .innerHeader {height: 80px; line-height: 80px;}
+    .innerHeader .mainMenu{width: 0; height: 0; opacity: 0; display: none;}
+    .menuOpen button.open{position: absolute; top: 0; transform: none; width: 70px; height: 80px; padding: 0; line-height: 80px;}
+    .menuOpen button.open:before {display: none;}
+    section.visual .mainImg {width: 100%; float: none;}
+    section.visual .mainImg img {width: 100%;}
+    section.visual .mainTxt{width: 100%; float: none; margin-top: 50px;}
+    section .inner .box {float: none; width: 100%;}
+    section.journal{padding: 80px 0;}
+    section.journal .circleBox {top:200px;}
+    section.journal .inner .box .img {margin: 0 auto 50px; padding-top: 0; width: 80%; }
+    section.service {padding: 80px 0;}
+    section.service .txt {margin-top: 20px;}
+    section.service .inner .box.design {margin-top: 50px; width: 100%;}
+    section.service .inner .box .img { margin: 50px auto 0; width:90%;}
+    section.service .inner .box .img {width: 70%; }
+    section.service .inner .box.design .img {width: 70%; margin:50px 0 0;}
+    section.service .img.motion:after {background: #fff;}
+    section.service .inner .box.design .tit {font-size: 35px;}
+    section.customer{padding: 120px 0;}
+    section.customer .tit {font-size: 30px;}
+    section.team{padding: 80px 0; overflow: hidden}
+    section.team .circleBox {left: 15%;}
+    section.team .inner .box.left {padding-right: 0; overflow: hidden;}
+    section.team .inner .box .img{margin-top: 50px; width: 70%; float: right; clear: both;} 
+    section.team .inner .box:nth-child(2) .img {width: 100%; margin: 50px 0;}
+    section.team .inner .box .tit {margin-top: 0; clear: both;}
+    section.team .inner .box.left .moreBtn {float: right; margin-right: 5px;}
+    footer .bottom ul li:nth-child(1) {width: 100%; margin-bottom: 30px;}
+    footer .bottom ul li {width: 33.3333%;}
+}
+
+/*모바일해상도 767px이하*/
+@media screen and (max-width:767px){
+    body{font-size: 13px;}
+    .innerHeader {height: 60px; line-height: 60px; padding: 0 20px;}
+    .menuOpen button.open {height: 60px;  line-height: 60px; width:52px;}
+    .menuOpen button.open img {height: 38px;}
+    .menuOpen .menuWrap .tit {font-size: 35px; left: 20px;}
+    .menuOpen .menuWrap .close:nth-child(1) {top:20px; left: 20px; transform: none;}
+    .menuOpen .menuWrap .close.en {display: none;}
+    .menuOpen .menuWrap.on:before {left: 20%;}
+    section.visual{padding: 0 20px;}
+    .tit {font-size: 30px;}
+    section.visual .mainTxt .tit {font-size: 31px;}
+    .tit span.en_s {font-size: 18px;}
+    .txt {text-align: justify;}
+    .moreBtn{font-size: 12px;}
+    section .inner {padding: 0 20px;}
+    section.journal {padding: 50px 0;}
+    section.journal .circleBox {top:15%; right: -4%;}
+    section.journal .inner .box .img {width: 100%; margin-bottom: 30px;}
+    section.journal .inner .box .tit {margin-bottom: 20px;}
+    section.journal .inner .box ul {padding-top: 20px;}
+    section.journal .inner .box ul li {margin-bottom: 20px;}
+    section.journal .inner .box ul li h3 {width: 100%; margin-bottom: 10px;}
+    section.journal .inner .box ul li p {font-size: 12px; width: 100%;}
+    section.journal .inner .box .moreBtn {margin-left: 0;}
+    section.service {padding: 50px 0;}
+    section.service .inner .box .img {width: 100%; margin-top: 30px;}
+    section.service .inner .box.design .img {width: 100%;}
+    section.service .inner .box .img.motion:after {background: #e8fcff;}
+    section.service .inner .box.design .img.motion:after {background: #fff;}
+    section.service .inner .box.design {padding-top: 50px;}
+    section.service .inner .box.design .tit {font-size: 25px; margin-bottom: 10px;}
+    section.customer {padding: 80px 20px;}
+    section.customer .tit {font-size: 25px;}
+    section.team {padding: 50px 0;}
+    section.team .circleBox {left: 4%;}
+    section.team .inner .box .txt {margin: 30px 0 10px;}
+    section.team .inner .box .img {margin-top: 30px;}
+    section.team .inner .box:nth-child(2) .img {margin: 30px 0;}
+    footer {padding: 0 20px;}
+    footer .top .tit {font-size: 31px; padding-bottom: 30px;}
+    footer .bottom ul li:nth-child(1) {font-size: 20px;}
+    footer .bottom ul li {width: 100%; margin-bottom: 12px;}
+    footer .bottom ul li b:nth-child(1) {font-size: 13px;}
+}
+
+/*320모바일*/
+@media screen and (max-width:320px) {
+    body{font-size: 12px;}
+    .tit span.en_s {font-size: 16px;}
+    section.visual .mainTxt .tit, .tit,footer .top .tit {font-size: 27px;}
+    .menuOpen .menuWrap .tit {font-size: 27px;}
+    section.journal .inner .box ul li h3 {font-size: 14px;}
+    section.service .inner .box.design .img.motion:after {background: #e8fcff;}
+    section.service .inner .box.design .tit {font-size: 22px;}
+    .moreBtn {font-size: 11px;}
+    
+}
